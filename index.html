@@ -24,6 +24,7 @@
 <script type="text/javascript" src="jgraduate/jquery.jgraduate.min.js"></script>
 <script type="text/javascript" src="spinbtn/JQuerySpinBtn.min.js"></script>
 <script type="text/javascript" src="touch.js"></script>
+
 <!--{if svg_edit_release}>
   <script type="text/javascript" src="svgedit.compiled.js"></script>
 <!{else}-->
@@ -47,17 +48,33 @@
   <script type="text/javascript" src="locale/locale.js"></script>
   <script type="text/javascript" src="contextmenu.js"></script>
 <!--{endif}-->
+
 <!-- you can load extensions here -->
 <!-- <script type="text/javascript" src="extensions/ext-helloworld.js"></script> -->
+
 <!-- always minified scripts -->
 <script type="text/javascript" src="jquery-ui/jquery-ui-1.8.17.custom.min.js"></script>
 <script type="text/javascript" src="jgraduate/jpicker.js"></script>
+
 <!-- feeds -->
 <link rel="alternate" type="application/atom+xml" title="SAVAGEdit General Discussion" href="#" />
 <link rel="alternate" type="application/atom+xml" title="SAVAGEdit Updates (Issues/Fixes/Commits)" href="#" />
+
 <!-- Add script with custom handlers here -->
 <title>SAVAGEdit</title>
 <style id="fc_rules"></style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17683290-27', 'savagedit.com');
+  ga('send', 'pageview');
+
+</script>
+
 </head>
 <body>
 <div id="svg_editor">
@@ -111,7 +128,7 @@
 
 <div id="main_button">
 	<div id="main_icon" class="tool_button" title="Main Menu">
-		<span>SVG-Edit</span>
+		<span><small>SAVAGEdit</small></span>
 		<div id="logo"></div>
 		<div class="dropdown"></div>
 	</div>
